@@ -1,0 +1,90 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{fontspec}
+\setromanfont{STSong} % 可以添加系统字体
+\setmonofont{Courier New} % 等寬字型
+
+\newfontfamily\hei{Heiti SC Medium}
+\newfontfamily\hei{Yuanti SC Regular}
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf \hei{尹捷}}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{上海交通大学}
+ \moveleft.5\hoffset\centerline{18916376110}
+ \moveleft.5\hoffset\centerline{http://yinjie.me}
+ \moveleft.5\hoffset\centerline{wingjaysjtu@gmail.com}
+ \moveleft.5\hoffset\centerline{上海市闵行区东川路800号,200240}
+
+
+\begin{resume}
+ 
+\section{\hei{求职意向}}  {\hei{移动开发工程师}}
+ 
+
+\section{\hei{教育经历}} {\sl 硕士  } \qquad{上海交通大学}\qquad{电子信息与电气工程学院}   \hfill 2013/06-2016/03 \\
+                  {\sl 学士   } \qquad{北京理工大学}\qquad{自动化学院}       \hfill 2009/06-2013/07 \\
+                 
+
+\section{\hei{实习与项目经历}} {\sl \hei{上海交大创新产业研究院InnoXYZ协同创新团队}} \hfill 2014/06-至今 \\
+\\
+                {\hei{InnoXYZ团队Android客户端 \qquad{独立开发}} }  \hfill 2014/12－2015/02
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item 利用InnoXYZ的官网(Java后台)提供的接口进行数据通信,\\从而在安卓客户端时实现网站的主体功能. 
+                \item  独立开发,对于Java语言、android系统有了较为深入的学习与实践\\
+                对于http异步通信、客户端与服务器交互有了一定认识. 
+                \item 熟练使用Github,并对开源项目有了一定认识.
+                %\item 下载：http://innoxyz.com/innoxyz\_1.0.apk
+                %均在左边显示二维码供下载
+                \end{itemize}
+ 
+                {\hei{思源公益图书馆PHP网站开发 \qquad{3人协同开发}}} \hfill 2014/06－2014/08、2015/03-至今 \\
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item 网站采用Apache服务器,ThinkPHP开发框架,数据库为Mysql、MongoDB,\\
+                 前端框架为Bootstrap.主要实现读者管理、捐书、借书、查阅等功能. 
+                 \item 前期(14年暑假)由3个人开发第一版,不过由于业务逻辑不清晰,\\本人于15年3月至今独自完成第二版的重构与开发.
+                 \item 代码由团队自建Gitlab托管,在Git托管代码与团队协作方面积累不少经验.
+                 \item 对web端技术如html5、css3、jQuery、若干开发框架与数据库有一定认识.
+                 \item 熟悉在Mac OS环境下使用ssh远程配置与维护阿里云服务器.
+                 %\item 网址：http://siyuanlib.com
+                 \end{itemize} 
+
+                {\hei{思源图书馆Android客户端开发 \qquad{2人协同开发}}} \hfill 2014/08－2014/11 \\
+                \begin{itemize}
+                \item 利用思源图书馆网站(PHP后台)所提供的接口,实现在安卓端捐书、还书与借书\\ 
+                等基本功能. 
+                \item 本人负责主体代码(包括网络通信等功能),队友主要负责自带二维码扫描模块.
+                \end{itemize} 
+ 
+\section{\hei{比赛 \\ 成绩}}    
+            {\hei{IBM主办基于worklight插件移动应用开发－激战48小时 \qquad{亚军(共1名)}} }\hfill 2014/09 \\   
+            \begin{itemize}
+                \item 利用worklight插件可直接把网页前端代码转化成适用于android、IOS平台的app. 
+                \item 本人所在小组利用html等网页技术开发基于自然灾害场景下信息分享平台InnoSOS.
+                \end{itemize}   
+
+            {\hei{研究生课程绩点2.63,全院排名20 \qquad{(全院130人)}}}\hfill 2013/09－2014/06 \\
+
+\section{\hei{专业 \\ 技能} }
+            {\sl 语言:} Java、Android、php、C等, \\
+            {\sl web技术:} ThinkPHP、Bootstrap和jQuery框架,Mysql、MongoDB数据库. \\
+            {\sl 其他:} 交换机通信底层C语言实现,神经网络与图像识别算法,LaTex,Hadoop虚拟集群搭建.\\
+            {\sl 阅读:} 现代操作系统,大型网站架构实现,设计模式,java编程思想等
+ 
+
+\end{resume}
+\end{document}
+
+
+
+
